@@ -1,0 +1,244 @@
+  .kanban-board {
+    width: 82.5%;
+    float: right;
+    padding: 2%;
+  }
+
+  .kanbanHeading {
+    display: flex;
+    padding-bottom: 25px;
+  }
+
+  .kanbanHeadingIcon {
+    padding: 0 5px;
+    border-radius: 5px;
+    color: rgb(86, 17, 206);
+    background-color: rgb(197, 186, 216);
+    cursor: pointer;
+  }
+
+  .leftPart {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .leftPart h2 {
+    font-weight: bold;
+  }
+
+  .rightPart {
+    display: flex;
+    align-items: center;
+    margin-left: 53%;
+  }
+
+  .inviteColor {
+    padding: 10px;
+    color: rgb(86, 17, 206);
+  }
+
+  .input-group .form-select {
+    color: grey;
+    font-size: smaller;
+  }
+
+  .btn-outline-secondary {
+    padding: 7px 22px;
+  }
+
+  .lineColor {
+    height: 30px;
+    width: 1.5px;
+    margin: 0 25px;
+    background-color: grey;
+  }
+
+  .lineEqualBox {
+    display: flex;
+    flex-direction: column;
+    padding: 7px 6px;
+    margin-right: 20px;
+    border-radius: 2px;
+    background-color: blue;
+  }
+
+  .lineEqual {
+    height: 4px;
+    width: 15px;
+    margin: 2px;
+    background-color: white;
+  }
+
+  .profileImg {
+    border: 2px solid white;
+    border-radius: 100%;
+    height: 45px;
+    width: 45px;
+  }
+
+  .imgSlideLeft {
+    margin-left: -10px;
+  }
+
+  .kanban-column-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .kanban-column {
+    width: 32.5%;
+    padding: 15px;
+    background-color: #f2f2f2;
+    border-radius: 14px;
+  }
+
+  .kanban-column h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  .kanban-column span{
+    font-size: small;
+    color: rgb(255, 149, 0);
+    background-color: rgb(243, 215, 193);
+    padding: 4px 6px;
+    border-radius: 5px;
+  }
+  .kanban-column p{
+    display: inline-block;
+  }
+  .dots{
+    display: inline;
+    float: right;
+    color: gray;
+    font-size: small;
+    padding-top: 8px;
+  }
+  .addTodoIcon{
+    margin-left: 65%;
+    border-radius: 5px;
+    color: rgb(86, 17, 206);
+    background-color: rgb(197, 186, 216);
+    cursor: pointer;
+  }
+  .kanban-column .count{
+    font-size: small;
+    color: black;
+    background-color: rgb(177, 168, 168);
+    padding: 4px 6px;
+    margin-left: 10px;
+    border-radius: 5pc;
+  }
+
+  .todoBox {
+    padding-bottom: 20px;
+    border-bottom: 3px solid rgb(86, 17, 206);
+  }
+
+  .todoBox::before {
+    content: "\2022";
+    color: rgb(86, 17, 206);
+    font-weight: bold;
+    font-size: large;
+    display: inline-block;
+    width: 1rem;
+    margin-left: .2em;
+  }
+
+  .progressBox {
+    padding-bottom: 20px;
+    border-bottom: 3px solid rgb(233, 180, 37);
+  }
+
+  .progressBox::before {
+    content: "\2022";
+    color: rgb(233, 180, 37);
+    font-weight: bold;
+    font-size: large;
+    display: inline-block;
+    width: 1rem;
+    margin-left: .2em;
+  }
+
+  .doneBox {
+    padding-bottom: 20px;
+    border-bottom: 3px solid rgb(114, 157, 90);
+  }
+
+  .doneBox::before {
+    content: "\2022";
+    color: rgb(114, 157, 90);
+    font-weight: bold;
+    font-size: large;
+    display: inline-block;
+    width: 1rem;
+    margin-left: .2em;
+  }
+
+  .kanban-card {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 13px;
+    background-color: #fff;
+    border-radius: 10px;
+    cursor: move;
+  }
+  .kanban-card h6{
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .kanban-card p{
+    font-size: 15px;
+    color: gray;
+  }
+  .commentImg{
+    border: 2px solid white;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+  }
+  .onboardImg{
+    width: 80%;
+    padding-left: 10%;
+  }
+  .moodboardImg{
+    width: 48%;
+    border-radius: 10px;
+  }
+  .img{
+    margin-right: 2%;
+    margin-bottom: 5%;
+  }
+  .mobileAppImg{
+    width: 100%;
+  }
+  p .compChip{
+    color: rgb(114, 157, 90);
+    background-color: rgb(228, 240, 212);
+  }
+
+  @media screen and (max-width: 1350px) {
+    .rightPart {
+      margin-left: 42%;
+    }
+  }
+
+  @media screen and (max-width: 1150px) {
+    .rightPart {
+      margin-left: 35%;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .rightPart {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .kanban-column-box {
+      flex-direction: column;
+    }
+    .kanban-column {
+      width: 95%;
+    }
+  }

@@ -1,0 +1,162 @@
+.side-panel {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 250px;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+  overflow-x: hidden;
+  border-right: 1px solid gray;
+}
+
+.adjust-btn {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.projectName {
+  display: flex;
+  padding: 25.5px 10px;
+  border-bottom: 1px solid grey;
+}
+
+.projectNameIcon {
+  padding: 0px 8px;
+  font-size: 20px;
+}
+
+.navBox1 {
+  margin: 0 10px;
+  border-bottom: 1px solid gray;
+}
+
+.navBox1 ul li {
+  list-style: none;
+  padding: 6px 0px;
+  margin-left: -30px;
+  color: rgb(111, 107, 107);
+}
+
+.navBox1 ul :hover {
+  cursor: pointer;
+}
+
+.navBox2 h6 {
+  color: rgb(75, 72, 72);
+  padding: 14px 0 10px 14px;
+  font-size: small;
+}
+
+.addProIcon {
+  padding-left: 110px;
+}
+
+.navBox2 ul li {
+  list-style: none;
+  padding: 0 0 10px 15px;
+  /* padding: 7px 0px; */
+  margin-left: -15px;
+  color: rgb(95, 90, 90);
+}
+
+.mobCircle::before {
+  content: "\2022";
+  color: rgb(72, 172, 22);
+  font-weight: bold;
+  font-size: large;
+  display: inline-block;
+  width: 1.4rem;
+  margin-left: -.6em;
+}
+
+.webCircle::before {
+  content: "\2022";
+  color: rgb(223, 150, 40);
+  font-weight: bold;
+  font-size: large;
+  display: inline-block;
+  width: 1.4rem;
+  margin-left: -.6em;
+}
+
+.designCircle::before {
+  content: "\2022";
+  color: rgb(176, 175, 173);
+  font-weight: bold;
+  font-size: large;
+  display: inline-block;
+  width: 1.4rem;
+  margin-left: -.6em;
+}
+
+.wireCircle::before {
+  content: "\2022";
+  color: rgb(40, 186, 223);
+  font-weight: bold;
+  font-size: large;
+  display: inline-block;
+  width: 1.4rem;
+  margin-left: -.6em;
+}
+
+.navBox2 ul :hover {
+  cursor: pointer;
+  color: black;
+  background-color: rgb(214, 221, 220);
+  border-radius: 10px;
+  font-weight: bolder;
+}
+
+.navBox3 {
+  height: 200px;
+  width: 200px;
+  margin-left: 25px;
+  margin-top: 10px;
+  background-color: rgb(231, 243, 242);
+  border-radius: 10%;
+}
+
+.bulbIcon {
+  font-size: 2rem;
+  padding: 20px;
+  margin-left: 32%;
+  color: rgb(255, 196, 0);
+  background-color: rgb(231, 243, 242);
+  border-radius: 45%;
+}
+
+.navBox3 p {
+  text-align: center;
+}
+
+.p-text {
+  text-align: center;
+  color: grey;
+  font-size: small;
+  padding: 0 10px;
+}
+
+.navBox3 input {
+  width: 150px;
+  margin: 0 20px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.navBox3 input::placeholder {
+  color: #000;
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 800px) {
+  .side-panel {
+    display: none;
+  }
+}

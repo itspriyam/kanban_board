@@ -1,0 +1,129 @@
+.header {
+    width: calc(100%-250px);
+    margin-left: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    border-bottom: 1px solid gray;
+    gap: 10px;
+}
+
+.inputBox {
+    width: 30%;
+    height: 40px;
+    padding-left: 40px;
+    margin-right: 32%;
+    margin-left: -3%;
+}
+
+.searchIcon {
+    position: relative;
+}
+
+.iconHead {
+    margin-right: 2.8%;
+    font-size: 25px;
+}
+
+.person p {
+    text-align: end;
+}
+
+.stateInfo {
+    color: gray;
+}
+
+.proImg {
+    margin-bottom: 15px;
+    margin-left: 11px;
+    border-radius: 100%;
+    height: 35px;
+    width: 35px;
+}
+
+.arrow {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-top: -15px;
+    margin-left: 4px;
+    border-top: 2px solid #605d5d;
+    border-right: 2px solid #605d5d;
+    transform: rotate(135deg);
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1350px) {
+    .header {
+        margin-left: 170px;
+        padding-left: 50px;
+    }
+
+    .inputBox {
+        margin-right: 26%;
+        margin-left: -4%;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .header {
+        margin-left: 150px;
+        gap: 8px;
+    }
+
+    .inputBox {
+        width: 36%;
+        margin-right: 14%;
+        margin-left: -5%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .header {
+        margin-left: 120px;
+    }
+
+    .iconHead {
+        display: none;
+    }
+
+    .inputBox {
+        margin-right: 27%;
+        margin-left: -6%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header {
+        margin-left: 100px;
+    }
+
+    .inputBox {
+        margin-right: 30%;
+        margin-left: -6%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        margin-left: 70px;
+    }
+
+    .inputBox {
+        margin-right: 20%;
+        margin-left: -6%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .inputBox {
+        display: none;
+    }
+    .searchIcon {
+        padding-right: 30px;
+    }
+}
